@@ -7,14 +7,13 @@
 #Set working directory
 setwd("~/USD/2020-2021/Fall 2020/ECON 494 - Intro to Business Analytics/Project I")
 
-#Import Excel data for each company
-AAPL <- read.csv("AAPL.csv")
-MSFT <- read.csv("MSFT.csv")
-SNE <- read.csv("SNE.csv")
-
 #Use this option to import from the internet
+AAPL <- read.csv('https://raw.githubusercontent.com/jlozano21/ECON-494---PROJECT-I/master/AAPL.csv')
+MSFT <- read.csv('https://raw.githubusercontent.com/jlozano21/ECON-494---PROJECT-I/master/MSFT.csv')
+SNE <- read.csv('https://raw.githubusercontent.com/jlozano21/ECON-494---PROJECT-I/master/SNE.csv')
+S&P500 Index <- read.csv('https://raw.githubusercontent.com/jlozano21/ECON-494---PROJECT-I/master/%5EGSPC%20(S%26P%20500%20Index).csv')
 
-#View each separate data set
+#View each data set
 View(AAPL)
 View(MSFT)
 View(SNE)
